@@ -28,6 +28,8 @@ namespace FizzBuzz083122
 
         [DataTestMethod]
         [DataRow(2, "2")]
+        [DataRow(4, "4")]
+        [DataRow(127, "127")]
         public void Convert_UnknowNum_ShouldReturn_UnknownNumString(int input, string expected)
         {
             string actual = fb.Convert(input);
@@ -35,7 +37,15 @@ namespace FizzBuzz083122
             Assert.AreEqual(expected, actual);
         }
 
+        [DataTestMethod]
+        [DataRow(3, "Fizz")]
+        [DataRow(9, "Fizz")]
+        [DataRow(33, "Fizz")]
+        public void Convert_DivisibleByThree_ShouldReturn_Fizz(int input, string expected)
+        {
+            string acutal = fb.Convert(input);
 
-
+            Assert.AreEqual(expected, acutal);
+        }
     }
 }
