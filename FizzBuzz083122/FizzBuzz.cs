@@ -5,7 +5,12 @@ namespace FizzBuzz083122
     {
         public string Convert(int num)
         {
-            return "0";
+            string result = string.Empty;
+
+            if (num == 0) result = "0";
+            else if (num == 1) result = "1";
+
+            return result;
         }
     }
 }

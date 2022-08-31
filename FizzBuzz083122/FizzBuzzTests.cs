@@ -16,5 +16,15 @@ namespace FizzBuzz083122
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void Convert_1_ShouldReturn_String1()
+        {
+            string expected = "1";
+
+            string actual = fb.Convert(1);
+
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
