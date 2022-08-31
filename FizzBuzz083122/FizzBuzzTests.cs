@@ -59,6 +59,15 @@ namespace FizzBuzz083122
             Assert.AreEqual(expected, acutal);
         }
 
+        [DataTestMethod]
+        [DataRow(15, "FizzBuzz")]
+        [DataRow(30, "FizzBuzz")]
+        [DataRow(60, "FizzBuzz")]
+        public void Convert_DivisibleByThreeAndFive_ShouldReturn_FizzBuzz(int input, string expected)
+        {
+            string acutal = fb.Convert(input);
 
+            Assert.AreEqual(expected, acutal);
+        }
     }
 }
