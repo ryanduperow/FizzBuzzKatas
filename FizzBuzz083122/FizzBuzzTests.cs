@@ -26,5 +26,16 @@ namespace FizzBuzz083122
             Assert.AreEqual(expected, actual);
         }
 
+        [DataTestMethod]
+        [DataRow(2, "2")]
+        public void Convert_UnknowNum_ShouldReturn_UnknownNumString(int input, string expected)
+        {
+            string actual = fb.Convert(input);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+
+
     }
 }
