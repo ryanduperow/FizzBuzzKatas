@@ -7,7 +7,10 @@ namespace FizzBuzz090622
         {
             List<string> result = new List<string>();
 
-            result.Add("2");
+            foreach (var num in nums)
+            {
+                result.Add(num.ToString());
+            }
 
             return result;
         }
