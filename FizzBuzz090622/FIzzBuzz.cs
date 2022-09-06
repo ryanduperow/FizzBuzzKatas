@@ -1,7 +1,7 @@
 ﻿
 namespace FizzBuzz090622
 {
-    public class FIzzBuzz
+    public class FizzBuzz
     {
         public List<string> Convert(List<int> nums)
         {
