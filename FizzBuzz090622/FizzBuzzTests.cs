@@ -52,5 +52,16 @@ namespace FizzBuzz090622
 
             CollectionAssert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Convert_6_ShouldReturn_Fizz()
+        {
+            expected = new List<string> { "Fizz" };
+            input = new List<int> { 6 };
+
+            actual = fb.Convert(input);
+
+            CollectionAssert.AreEqual(expected, actual);
+        }
     }
 }

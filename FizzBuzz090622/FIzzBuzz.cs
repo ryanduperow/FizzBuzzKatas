@@ -9,7 +9,11 @@ namespace FizzBuzz090622
 
             foreach (var num in nums)
             {
-                if (num == 3)
+                if (num == 0)
+                {
+                    result.Add(num.ToString());
+                }
+                else if (num % 3 == 0)
                 {
                     result.Add("Fizz");
                 }
