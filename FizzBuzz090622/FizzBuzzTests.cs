@@ -5,9 +5,9 @@ namespace FizzBuzz090622
     public class FizzBuzzTests
     {
         private FizzBuzz fb = new FizzBuzz();
-        private List<int> input = new List<int>();
-        private List<string> expected = new List<string>();
-        private List<string> actual = new List<string>();
+        private List<int> input;
+        private List<string> expected;
+        private List<string> actual;
 
         [TestMethod]
         public void Convert_2_ShouldReturn_String2()
