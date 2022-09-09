@@ -13,9 +13,17 @@ namespace FizzBuzz090622
                 {
                     result.Add(num.ToString());
                 }
+                else if (num % 3 == 0 && num % 5 == 0)
+                {
+                    result.Add("FizzBuzz");
+                }
                 else if (num % 3 == 0)
                 {
                     result.Add("Fizz");
+                }
+                else if (num % 5 == 0)
+                {
+                    result.Add("Buzz");
                 }
                 else
                 {

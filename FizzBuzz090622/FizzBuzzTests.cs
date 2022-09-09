@@ -63,5 +63,38 @@ namespace FizzBuzz090622
 
             CollectionAssert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Convert_10_ShouldReturn_Buzz()
+        {
+            expected = new List<string> { "Buzz" };
+            input = new List<int> { 10 };
+
+            actual = fb.Convert(input);
+
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Convert_15_ShouldReturn_FizzBuzz()
+        {
+            expected = new List<string> { "FizzBuzz" };
+            input = new List<int> { 15 };
+
+            actual = fb.Convert(input);
+
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Convert_VariousNums_ShouldReturn_CorrectStringList()
+        {
+            expected = new List<string> { "1", "FizzBuzz", "Fizz", "7", "Buzz", "0", "Buzz"};
+            input = new List<int> { 1, 30, 12, 7, 20, 0, 125};
+
+            actual = fb.Convert(input);
+
+            CollectionAssert.AreEqual(expected, actual);
+        }
     }
 }
